@@ -1,0 +1,87 @@
+.main-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/background.jpg');
+    background-size: contain;
+    background-position: center;
+}
+.main-container{
+    height: 600px;
+    width: 900px;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    backdrop-filter: blur(15px);
+    overflow: scroll;
+}
+.main-container-second{
+    width: 900px;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    backdrop-filter: blur(15px);
+    padding-bottom: 100px !important;
+}
+.pokemon-image{
+    width: 40%;
+    border-radius: 10px;
+}
+.main-container::-webkit-scrollbar{
+    display: none;
+}
+
+.pokemon-logo{
+    width: 16%;
+}
+.poke-card:hover{
+    background-color: white;
+}
+.poke-card{
+    padding-top: 20px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+.details-title{
+    text-transform: capitalize;
+}
+.details-image{
+    width: 50%;
+}
+.outer{
+    height: 10px;
+    background-color: #000080;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 70%;
+}
+.inner{
+    background-color: #4666ff;
+    height: 10px;
+    transition: 1s;
+    width: 0%;
+}
+
+@media only screen and (max-width:600px){
+    .main-wrapper{
+        background-size: cover;
+    }
+    .main-container{
+        width: 95%;
+    }
+    .main-container-second{
+        width: 95%;
+        padding-bottom: 10px !important;
+    }
+    .pokemon-logo{
+        width: 40%;
+    }
+    .main-wrapper{
+        height: 110vh;
+    }
+}
