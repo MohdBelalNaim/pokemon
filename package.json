@@ -1,7 +1,10 @@
 {
   "name": "pokedex",
+  "homepage": "http://MohdBelalNaim.gihub.io/pokedex",
   "version": "0.1.0",
   "private": true,
+  "predeploy" : "npm run build",
+  "deploy" : "gh-pages -d build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
